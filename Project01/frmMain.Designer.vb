@@ -24,6 +24,7 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnNewbegining = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,15 +46,25 @@ Partial Class frmMain
         Me.btnNewbegining.Text = "This is a new  begining of a project"
         Me.btnNewbegining.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(335, 43)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(204, 55)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "New Button"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(616, 492)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Name = "Form1"
+        Me.Name = "frmMain"
         Me.Text = "Main Menu"
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -62,4 +73,5 @@ Partial Class frmMain
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnNewbegining As Button
+    Friend WithEvents Button1 As Button
 End Class
